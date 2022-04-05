@@ -9,12 +9,32 @@ import ChatAppEffect from './ChatAppEffect';
 import Jobs from './Job';
 import  {BasicTable}  from './ComponentTable/BasicTable';
 import { SortingTable } from './ComponentTable/SortingTable';
+import {SelectionComponent} from './ComponentTable/SelectOption';
+import UseRef from './UseRef';
+import Memo from './Memo';
+import UseMemo from './UseMemo';
+import UseReducer from './UseReducer';
 
 const gifts = [
   'RealMadrid',
   'Machester United',
   'Bayern Muchen'
 ];
+
+//Fake Comment
+function emitComment(id) {
+  setInterval(()=>{
+    window.dispatchEvent(
+      new CustomEvent(`lesson-${id}`,{
+        detail: `Nội dung của lesson-${id}`
+      })
+    )
+  },2000)
+}
+emitComment(1)
+emitComment(2)
+emitComment(3)
+emitComment(4)
 
 
 function App() {
@@ -30,10 +50,14 @@ function App() {
       {/* {show && <TimerEffect/>} */}
       {/* {show && <CleanupEfffect/>} */}
       {/* <ChatAppEffect/> */}
-      
+      {/* <UseRef/> */}
+      {/* <Memo/> */}
+      {/* <UseMemo/> */}
+      <UseReducer/>
       {/* <Jobs/> */}
       {/* <BasicTable/> */}
-      <SortingTable/>
+      {/* <SortingTable/> */}
+      {/* <SelectionComponent/> */}
 
     </div>
   )
