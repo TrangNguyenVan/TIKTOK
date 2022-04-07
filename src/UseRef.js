@@ -17,8 +17,8 @@ function UseRef() {
     return(
         <div style={{padding:20}}>
             <h1>{count}</h1>
-            <button onClick={handleStart}>Start</button>
-            <button onClick={handleStop}>Stop</button>
+            <button onClick={handleStart}>Start change</button>
+            <button onClick={handleStop}>Stop change</button>
         </div>
     )
 }

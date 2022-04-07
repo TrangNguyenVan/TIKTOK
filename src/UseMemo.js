@@ -19,7 +19,7 @@ function UseMemo() {
 
     const total = useMemo(() => {
         const result = products.reduce((result,prod)=>{
-            console.log('Tính toán lại...');
+            console.log('Calculator again...');
             return result + prod.price;
         },0)
         return result;
@@ -30,13 +30,13 @@ function UseMemo() {
             <input
                 ref={nameRef}
                 value={name}
-                placeholder="Enter name"
+                placeholder="Enter name..."
                 onChange={e=>setName(e.target.value)}
             />
             <br/>
             <input
                 value={price}
-                placeholder="Enter price"
+                placeholder="Enter price..."
                 onChange={e=>setPrice(e.target.value)}
             />
             <br/>

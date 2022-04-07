@@ -51,6 +51,7 @@ function UseEffectDOM() {
     return(
         <div>
             <h1>{width}</h1>
+            <h2>xin chao</h2>
         </div>
     )
 }

@@ -5,8 +5,9 @@ function MemoChildren({onInCrease}) {
     return ( 
         <>
             <h1>UseMemoChildren</h1>
-            <button onClick={onInCrease}>Click to me !</button>
+            <button onClick={onInCrease}>Click me !</button>
         </>
     )
-}
+} 
+
 export default memo(MemoChildren);
