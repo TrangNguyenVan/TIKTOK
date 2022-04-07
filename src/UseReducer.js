@@ -33,13 +33,13 @@ function UseReducer() {
             <button 
                 onClick={() => dispatch(DOWN_ACTION)}
             >
-                Down
+                Click to DOWN
             </button>
 
             <button 
-                onClick={() => dispatch(HI_ACTION)}
+                onClick={() => dispatch(UP_ACTION)}
             >
-                Up
+                Click to Up
             </button>
         </div>
     )

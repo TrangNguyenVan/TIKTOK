@@ -96,7 +96,7 @@ function Jobs() {
         value={selectedTatiFilm}
         onChange={(e) =>
           setSelectedTatiFilm(
-            filmsByTati.find(film => (film.id == e.target.value))
+            filmsByTati.find(film => (film.id === e.target.value))
           )
         }
       >

@@ -5,7 +5,7 @@ function MemoChildren({onInCrease}) {
     return ( 
         <>
             <h1>UseMemoChildren</h1>
-            <button onClick={onInCrease}>Click me !</button>
+            <button onClick={onInCrease}>Click to me !</button>
         </>
     )
 }

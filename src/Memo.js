@@ -17,8 +17,7 @@ function Memo() {
     return(
         <div style={{padding:20}}>
             <MemoChildren onIncrease={handleInscrease} />
-            <h1>{count}</h1>
-            
+            <h1>{count}</h1> 
         </div>
     )
 }
